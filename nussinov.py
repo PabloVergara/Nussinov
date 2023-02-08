@@ -95,7 +95,7 @@ def nussinov(sequence):
             DP[i][j] = DP[j][i]
 
 
-    traceback(0,N-1, structure, DP, sequence)
+    traceback(1,N-1, structure, DP, sequence)
     return (write_structure(sequence, structure), structure)
 if __name__ == "__main__":
 	print(nussinov(sys.argv[1]))
